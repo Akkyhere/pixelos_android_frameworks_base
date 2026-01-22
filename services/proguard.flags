@@ -143,3 +143,9 @@
 -keep class com.google.android.submerge.** {
     *;
 }
+
+# ---- LMOFreeform keep rules ----
+-keep class com.android.server.display.FreeformService { *; }
+-keep class com.libremobileos.freeform.server.** { *; }
+-keep class com.libremobileos.freeform.** { *; }
+-dontwarn com.libremobileos.freeform.**

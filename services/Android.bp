@@ -568,3 +568,6 @@ non_updatable_exportable_droidstubs {
         "am_flags_lib",
     ],
 }
+subdirs = [
+    "freeform",
+]

@@ -1,4 +1,4 @@
-//
+//Fixed by Akky
 // SPDX-FileCopyrightText: 2023 The LibreMobileOS Foundation
 // SPDX-FileCopyrightText: 2024 crDroid Android Project
 // SPDX-License-Identifier: Apache-2.0
@@ -8,10 +8,10 @@ filegroup {
     name: "services.freeform-sources",
     srcs: [
         "java/**/*.java",
-        "java/**/*.kt"
+        "java/**/*.kt",
     ],
     path: "java",
-    visibility: ["//frameworks/base/services"],
+    visibility: ["//frameworks/base/services:__subpackages__"],
 }
 
 java_library_static {
@@ -24,4 +24,5 @@ java_library_static {
         "lmofreeform-server",
     ],
     jarjar_rules: "jarjar-rules.txt",
+    visibility: ["//frameworks/base/services:__subpackages__"],
 }
